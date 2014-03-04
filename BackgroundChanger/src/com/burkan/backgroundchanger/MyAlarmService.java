@@ -25,12 +25,10 @@ public class MyAlarmService extends BroadcastReceiver {
 			bmp = BitmapFactory.decodeResource(context.getResources(),R.drawable.bg_afternoon_1920_1200);
 		else
 			bmp = BitmapFactory.decodeResource(context.getResources(),R.drawable.bg_morning_1280x800);
-		BitmapDrawable bitmapDrawable = new BitmapDrawable(bmp);
 	    WallpaperManager m=WallpaperManager.getInstance(context);
 	    try {
 	    	bmp = Bitmap.createBitmap(bmp, (int)(bmp.getWidth()/5)*2, 0, bmp.getWidth()/2, bmp.getHeight());
 	        m.setBitmap(bmp);
-	        Toast.makeText(context, "Wallpaper Updated", Toast.LENGTH_LONG).show();
 	    } catch (IOException e) {
 	        e.printStackTrace();
 	    }
