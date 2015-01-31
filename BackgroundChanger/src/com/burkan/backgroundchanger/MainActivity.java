@@ -14,7 +14,6 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 	public Button set,exit;
-	//a��klama asdasdasd
 	private PendingIntent pendingIntent;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
